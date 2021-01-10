@@ -1,4 +1,4 @@
-CREATE TABLE Persons (
+CREATE TABLE NUMBERTAB(
     ID int(10),
     REQUEST int(25),
     PRIMARY KEY (ID)

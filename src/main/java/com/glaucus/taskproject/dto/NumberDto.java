@@ -12,10 +12,8 @@ import javax.persistence.Table;
  * @author Bilal_Ahmad
  *
  */
-
-
 @Entity
-@Table(name = "NUMBERTAB1")
+@Table(name = "NUMBERTAB")
 public class NumberDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
