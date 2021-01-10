@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.glaucus.taskproject.service.NumberService;
 
-
+/**
+ * 
+ * @author Bilal_Ahmad
+ *
+ */
 
 @RestController
 @CrossOrigin (origins = "*")
@@ -18,20 +22,14 @@ public class NumberController {
 	@Autowired
 	NumberService  numberService;
 	
-	private int requestCount=0;
-	
 	@GetMapping("/thread")
-	public String threadEntry()  {
+	public void threadEntry()  {
 		
-		try {	
-			
-			numberService.executeThread();
-			System.out.println("Request Count ---  " + requestCount++);
-		
+		try {				
+			numberService.executeThread();		
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println("Request failed ... !!");
 		}
-		return "Hii This is Test !!";
 	}
 	
 }

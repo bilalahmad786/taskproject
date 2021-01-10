@@ -2,7 +2,6 @@ package com.glaucus.taskproject.dto;
 
 import java.io.Serializable;
 
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,9 +9,11 @@ import javax.persistence.Table;
 
 /**
  * 
- * @author Bilal Ahmad
+ * @author Bilal_Ahmad
  *
  */
+
+
 @Entity
 @Table(name = "NUMBERTAB1")
 public class NumberDto implements Serializable {
@@ -20,20 +21,16 @@ public class NumberDto implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Basic(optional = true)
 	@Column(name = "ID")
 	private int id;
 
-	@Basic(optional = true)
 	@Column(name = "REQUEST")
 	private int request;
-
 
 	
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -41,7 +38,6 @@ public class NumberDto implements Serializable {
 	public int getRequest() {
 		return request;
 	}
-
 	public void setRequest(int request) {
 		this.request = request;
 	}
@@ -75,9 +71,6 @@ public class NumberDto implements Serializable {
 	public String toString() {
 		return "NumberDto [id=" + id + ", request=" + request + "]";
 	}
-
-	
-	
 	
 
 }
