@@ -1,0 +1,5 @@
+CREATE TABLE Persons (
+    ID int(10),
+    REQUEST int(25),
+    PRIMARY KEY (ID)
+);

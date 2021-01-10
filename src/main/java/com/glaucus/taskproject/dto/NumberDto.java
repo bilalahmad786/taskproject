@@ -23,6 +23,12 @@ public class NumberDto implements Serializable {
 	@Basic(optional = true)
 	@Column(name = "ID")
 	private int id;
+
+	@Basic(optional = true)
+	@Column(name = "REQUEST")
+	private int request;
+
+
 	
 	public int getId() {
 		return id;
@@ -39,11 +45,7 @@ public class NumberDto implements Serializable {
 	public void setRequest(int request) {
 		this.request = request;
 	}
-
-	@Basic(optional = true)
-	@Column(name = "REQUEST")
-	private int request;
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
